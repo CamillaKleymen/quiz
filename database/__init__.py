@@ -1,8 +1,9 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-SQLACHEMY_DATABASE_URI = 'sqlite:///data.db'
-engine = create_engine(SQLACHEMY_DATABASE_URI)
+# SQLACHEMY_DATABASE_URI = 'sqlite:///data.db'
+SQLALCHEMY_DATABASE_URL = "postgresql://postgres:muxtar15ovchar@localhost/quiz"
+engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine)
 Base = declarative_base()
 
