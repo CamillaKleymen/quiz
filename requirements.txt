@@ -3,3 +3,4 @@ requests
 telebot
 uvicorn
 sqlalchemy
+psycopg2-binary
